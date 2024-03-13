@@ -32,6 +32,9 @@ body {
 	line-height: 1;
     background-color: #cecec4;
     color: #212121;
+    font-family: Space Grotesk, sans-serif;
+    font-optical-sizing: auto;
+    transition: 1s all;
 }
 ol, ul {
 	list-style: none;
@@ -50,12 +53,12 @@ table {
 }
 
 header {
-    padding: 3% 0;
     border-bottom: 2px solid #393632;
+    position: relative;
 }
 
 .logo {
-    padding: 0 10px 0 5px;
+    padding: 5px 10px 0 10px;
     max-width: 10%;
     display: inline-flexbox;
     float: left;
@@ -64,45 +67,81 @@ header {
 nav {
     display: flexbox;
     float: center;
+    text-align: center;
+    padding: 3% 0 2% 2%;
+    
 }
 
 nav a {
-    font-family: sans-serif;
     font-size: 15px;
+    font-weight: bold;
+    text-align: center;
     color: #393632;
     padding: 1%;
     margin: 1%;
     text-decoration: none;
-    transition: 10s all;
-    border-radius: 10px;
+    transition: 1s all;
+    text-transform: uppercase;
 }
 
 nav a:hover {
     background-color: #cecec4;
-    text-decoration: underline;
-    font-style: italic;
+    color: #010101;
 }
 
 header h1 {
-    padding: 2% 0 1% 0;
-    font-family: sans-serif;
-    font-weight: 900;
-    font-size: 3em;
+    padding: 3% 5%;
+    font-weight: 700;
+    font-size: 5em;
     text-align: center;
 }
 
 .description {
-padding: 5% 10%;
-line-height: auto;
-font-size: 25px;
-word-wrap: break-word;
+padding: 10%;
+margin: auto;
+}
+
+.section-obj {
+    float: right;
+}
+
+.description h1, .location h1 {
+    font-size: 2.3em;
+    font-weight: 700;
+    font-optical-sizing: auto;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2%;
 }
 
 .description img {
     border-radius: 10px;
     max-width: 30%;
     float: left;
-    margin: 0 10px;
+    margin: auto 10px;
+}
+
+.description p {
+    font-size: 15px;
+    font-weight: 400;
+    font-display: initial;
+    line-height: 1.2;
+    word-wrap: break-word;
+}
+
+.description ul {
+    padding: 4%;
+    font-weight: 300;
+}
+
+.description ul li{
+    color: red;
+    list-style-type:circle;
+}
+
+.location {
+    border-top: 2px solid #393632;
+    padding: 3% 0;
 }
 
 footer {
@@ -110,6 +149,6 @@ footer {
     color: #e7e7e2;
     top: 0;
     bottom: 0;
-    padding: 3% 0;
+    padding: 2% 0;
     text-align: center;
 }
