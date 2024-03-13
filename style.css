@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     background-color: #cecec4;
-    color: rgb(57, 54, 50);
+    color: #212121;
 }
 ol, ul {
 	list-style: none;
@@ -51,7 +51,7 @@ table {
 
 header {
     padding: 3% 0;
-    background: url(img/header.jpg);
+    border-bottom: 2px solid #393632;
 }
 
 .logo {
@@ -67,20 +67,24 @@ nav {
 }
 
 nav a {
-    color: #cecec4;
-    background-color: #393632;
-    padding: 5px 5px;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #393632;
+    padding: 1%;
     margin: 1%;
     text-decoration: none;
-    transition: 1s all;
+    transition: 10s all;
+    border-radius: 10px;
 }
 
 nav a:hover {
-    color: #393632;
     background-color: #cecec4;
+    text-decoration: underline;
+    font-style: italic;
 }
 
 header h1 {
+    padding: 2% 0 1% 0;
     font-family: sans-serif;
     font-weight: 900;
     font-size: 3em;
@@ -88,13 +92,23 @@ header h1 {
 }
 
 .description {
-padding: 5px 10%;
+padding: 5% 10%;
 line-height: auto;
+font-size: 25px;
+word-wrap: break-word;
+}
+
+.description img {
+    border-radius: 10px;
+    max-width: 30%;
+    float: left;
+    margin: 0 10px;
 }
 
 footer {
     background-color: rgb(57, 54, 50);
     color: #e7e7e2;
+    top: 0;
     bottom: 0;
     padding: 3% 0;
     text-align: center;
